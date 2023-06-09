@@ -1,0 +1,12 @@
+POST http://localhost:3001/api/user/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstname": "Gopinath",
+    "lastname": "Panda",
+    "email": "da@777.com",
+    "password": "shrey123"
+}
+
+###
+GET http://localhost:3001/api/user/get HTTP/1.1
