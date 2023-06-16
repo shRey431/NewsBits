@@ -29,7 +29,7 @@ const registerUser = asyncHandler(async (req, res) => {
         res.status(201).json({ _id: newUser.id, email: newUser.email });
     } else {
         res.status(400);
-        throw new Error("User data us not valid");
+        throw new Error("User data is not valid");
     }
 });
 
