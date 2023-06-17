@@ -6,11 +6,11 @@ const PORT = process.env.PORT || 5001;
 
 const app = express();
 const authRouter = require("./routes/authRoutes");
-const { test1 } = require("./dummy");
-
+const { dataWatcher } = require("./controllers/articleCtrl");
 
 dbConnect();
 app.use(express.json());
 app.use("/api/user", authRouter);
-test1();
+dataWatcher();
+
 app.listen(PORT, () => console.log("Server running on port " + PORT));
